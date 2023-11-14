@@ -1,0 +1,14 @@
+print("Let's start?")
+b = input()
+while b == "yes":
+    print("Enter a number")
+    a = int(input())
+    while a != b:
+        if a > b:
+            a -= b
+        else:
+            b -= a
+    print(a)
+    print("Continue?")
+    b = input()
+print("Good bye!")
